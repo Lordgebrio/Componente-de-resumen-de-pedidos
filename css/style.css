@@ -1,0 +1,140 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Colores */
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--Pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Estilos tarjeta */
+
+.card {
+  max-width: 400px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 20px;
+}
+
+.illustration {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-text {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.card-text h2 {
+  color: var(--Dark-blue);
+  padding: 20px 0;
+  font-size: 1.875rem;
+  font-weight: 900;
+}
+
+.card-text p {
+  color: var(--Desaturated-blue);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.card-plan {
+  display: flex;
+  padding: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  font-size: 1rem;
+  padding-left: 20px;
+  text-align: start;
+  line-height: 32px;
+}
+
+.price h3 {
+  color: var(--Dark-blue);
+}
+
+.price p {
+  color: var(--Desaturated-blue);
+}
+
+.card-plan a {
+  color: var(--Bright-blue);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.card-plan a:hover {
+  color: var(--Dark-blue);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.button {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.send {
+  background-color: var(--Dark-blue);
+  border-style: none;
+  font-weight: 700;
+  color: var(--Very-pale-blue);
+  font-size: 1rem;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.cancel {
+  background-color: transparent;
+  border-style: none;
+  font-weight: 700;
+  color: var(--Desaturated-blue);
+  font-size: 1rem;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.cancel:hover {
+  color: var(--Dark-blue);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.send:hover {
+  background-color: var(--Bright-blue);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
